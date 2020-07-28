@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The Posts Page!</h1>
+    <% for(let post in posts){ %>
+    <p><%= posts[post].title%></p>
+    <%} %>
+    <hr />
+    <% posts.forEach(post => { %>
+    <p><%= post.title %></p>
+    <% }) %>
+  </body>
+</html>
